@@ -1,18 +1,69 @@
 .mainFooter {
   background: $black;
+  padding: 10px 0;
+  margin: 40px 0 0 0;
 }
 
 .mainFooter__iconsBar {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #fff;
+  padding: 0 0 10px;
 }
 
 .social-icon {
   width: 24px;
   height: 24px;
-
+  margin: 0 10px;
   &--fillWhite {
     fill: #fff;
+    transition: 0.3s;
+  }
+
+  &-link:hover .social-icon--fillWhite {
+      fill: $orange;
+      transition: 0.3s;
+  }
+  &-link:focus .social-icon--fillWhite {
+    fill: $orange;
+    transition: 0.3s;
+}
+
+&-link:focus {
+  outline: none;
+}
+
+
+}
+
+.mainFooter__linksBar {
+  text-align: center;
+}
+.mainFooter__logo {
+  margin: 11px 0;
+  width: 7rem;
+}
+
+.mainFooter__linksList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linksList-item {
+  margin: 0 6px;
+}
+
+.linksList-link {
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    color: $orange
+  }
+  &:focus {
+    color: $orange;
+    outline: none;
   }
 }
