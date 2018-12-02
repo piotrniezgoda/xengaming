@@ -1,0 +1,18 @@
+.mainFooter {
+  background: $black;
+}
+
+.mainFooter__iconsBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+
+  &--fillWhite {
+    fill: #fff;
+  }
+}

@@ -1,0 +1,26 @@
+.shopAD {
+  padding: 25px 0;
+}
+
+.shopAD__photoContainer {
+  width: 100%;
+  margin: 12px 0 0 0;
+  text-align: center;
+}
+
+.shopAD__image {
+  width: 100%;
+  max-width: 1000px
+}
+
+.shopAD__linkContainer {
+  text-align: center;
+  margin: 26px 0 0 0;
+}
+
+.shopAD__desc {
+  color: $orange;
+  font-size: 0.75rem;
+  margin: 0 0 9px 0;
+}
+

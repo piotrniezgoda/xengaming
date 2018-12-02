@@ -34,6 +34,7 @@
 
 .textGradient {
   background: linear-gradient(#EEA849, #F46B45);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -44,7 +45,7 @@
   top: 0;
   left: 0;
   z-index: 99;
-  
+
   &::before {
     content: '';
     width: 100%;
@@ -169,5 +170,51 @@
   border: none;
   width: 53px;
   height: 53px;
+  padding: 1px;
+}
+
+//phone landscape
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .logo-container {
+      padding: 0;
+    }
+    .mainHeader__desc {
+      margin: 12px 0 0 0;
+    }
+
+    .mainHeader__scrollDown {
+      padding: 0 0 10px 0;
+    }
+
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+    .logo-container {
+      padding: 0;
+    }
+    .mainHeader__desc {
+      margin: 12px 0 0 0;
+    }
+
+    .mainHeader__scrollDown {
+      padding: 0 0 10px 0;
+    }
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .mainHeader__desc {
+      font-size: 1.23rem
+    }
+    .scrollDown-text {
+      font-size: 0.8rem;
+    }
 }
 
